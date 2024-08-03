@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <form method="post" action="#">
+        <center>
+        <h1>COURSE REGISTRATION FORM</h1>
+        </center>
+        <div class="form">
+            <label for="fname">STUDENT NAME</label><br>
+            <input type="text" name="fname" id="fname" required><br>
+            <label for="R_NO">ROLL NO</label><br>
+            <input type="number" name="R_NO" id="R_NO" required><br>
+            
+            <div class="radio-group">
+                <label for="gen">GENDER</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div><br>
+
+            <label for="email">EMAIL</label><br>
+            <input type="text" name="email" id="email" required><br>
+            <label for="mob">MOBILE NO</label><br>
+            <input type="text" name="mob" id="mob" required><br><br>
+            
+            <label for="YEAR">YEAR</label><br>
+            <select id="YEAR" name="YEAR" required>
+                <option value="">SELECT YOUR YEAR</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+            </select><br>
+
+            <label for="degree">DEPARTMENT</label><br>
+            <select id="degree" name="degree" required>
+                <option value="">SELECT YOUR FIELD</option>
+                <option value="AL">CSE</option>
+                <option value="AK">IT</option>
+                <option value="AZ">EEE</option>
+                <option value="AR">AI & DS</option>
+                <option value="CA">AI & ML</option>
+            </select><br>
+
+            <label for="course">COURSE</label><br>
+            <select id="course" name="course" required>
+                <option value="">SELECT YOUR COURSE</option>
+                <option value="AL">JAVA</option>
+                <option value="AK">C</option>
+                <option value="AZ">C++</option>
+                <option value="AR">PYTHON</option>
+                <option value="CA">DART</option>
+                <option value="CB">HTML</option>
+                <option value="CC">CSS</option>
+                <option value="CD">JAVASCRIPT</option>
+            </select><br>
+            
+            <label for="address">ADDRESS</label><br>
+            <textarea id="address" name="address" placeholder="Enter your address here..."></textarea><br><br>
+            
+            <label for="state">STATE</label>
+            <input type="text" name="state" id="state" required><br><br>
+            <label for="coun">COUNTRY</label>
+            <input type="text" name="coun" id="coun" required><br><br>
+            <label for="pin">PINCODE</label>
+            <input type="number" name="pin" id="pin" required><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">RESET</button>
+        </div>
+    </form>
+    <script src="home.js"></script>
+</body>
+</html>
