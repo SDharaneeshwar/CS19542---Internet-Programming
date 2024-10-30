@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details AJAX</title>
+    <script>
+        function fetchStudentDetails() {
+            const regNo = document.getElementById("regNo").value;
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "GetStudentDetails?reg_no=" + regNo, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("studentDetails").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Student Registration Number</h2>
+    <select id="regNo" onchange="fetchStudentDetails()">
+        <option value="">--Select Reg No--</option>
+        <option value="101">101</option>
+        <option value="102">102</option>
+    </select>
+    <div id="studentDetails">
+        <h3>Student Details will appear here.</h3>
+    </div>
+</body>
+</html>
